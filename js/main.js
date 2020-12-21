@@ -38,13 +38,13 @@
 		delay: 5000,
 		slides: [
 			{ src: "images/slides/04.jpg" },
+			{ src: "images/slides/IMG-20201221-WA0038.jpg" },
 			{ src: "images/slides/05.jpg" },
 			{ src: "images/slides/06.jpg" },
 			{ src: "images/slides/07.webp" },
 			{ src: "images/slides/08.jpg" },
 			{ src: "images/slides/09.jpg" },
-			{ src: "images/slides/IMG-20201221-WA0037.jpg" },
-			{ src: "images/slides/IMG-20201221-WA0038.jpg" }
+			{ src: "images/slides/IMG-20201221-WA0037.jpg" }
 		]
 	});
 
