@@ -8,6 +8,7 @@
     <meta name="description" content="MCAT Global is a wholly owned Ghanaian company 
     established in the year 2005. We are headquartered in Accra, Ghana.">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <title>MCAT Global</title>
 </head>
 
@@ -202,7 +203,7 @@
                                 </div>
                                 <div>
                                     <button aria-label="Close Menu" title="Close Menu" id="close_menu"
-                                        class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                                        class="p-2 -mt-2 -mr-2 transition duration-200 focus:outline-none">
                                         <svg class="w-5 text-white" viewBox="0 0 24 24">
                                             <path fill="currentColor"
                                                 d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z">
@@ -262,6 +263,13 @@
     </div>
 
     <div class="bg-gray-900">
+        <div class="absolute inset-x-0 bottom-0">
+            <svg viewBox="0 0 224 12" fill="currentColor" class="w-full -mb-1 text-white" preserveAspectRatio="none">
+                <path
+                    d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z">
+                </path>
+            </svg>
+        </div>
         <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div class="max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
                 <p class="mb-6 text-base font-thin tracking-wide text-white md:text-lg">
@@ -967,31 +975,32 @@
                                 <h3 class="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                                     Send Us A Message
                                 </h3>
-                                <form>
+                                <form action="https://send.pageclip.co/DKoRBrU39gfPJmCyjTvNR0GsDvklkr3l/contact-form"
+                                    class="pageclip-form" method="post">
                                     <div class="mb-1 sm:mb-2">
                                         <label for="Name" class="inline-block mb-1 font-medium">Name</label>
-                                        <input placeholder="Your Name" required="" type="text"
+                                        <input placeholder="Your Name" required type="text"
                                             class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none"
                                             id="Name" name="Name" />
                                     </div>
                                     <div class="mb-1 sm:mb-2">
                                         <label for="email" class="inline-block mb-1 font-medium">E-mail</label>
-                                        <input placeholder="Email address" required="" type="text"
+                                        <input placeholder="Email address" required type="text"
                                             class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none"
-                                            id="email" name="email" />
+                                            id="email" name="Email" />
                                     </div>
                                     <div class="mb-1 sm:mb-2">
                                         <label for="Message" class="inline-block mb-1 font-medium">Message</label>
-                                        <textarea rows="5" cols="30" placeholder="Message" required="" id="Message"
+                                        <textarea rows="5" cols="30" placeholder="Message" required id="Message"
                                             name="Message"
-                                            class="flex-grow w-full px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none">
-
+                                            class="w-full px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none">
                                         </textarea>
                                     </div>
                                     <div class="mt-4 mb-2 sm:mb-4">
                                         <button type="submit"
                                             class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-500">
                                             Send
+                                            <span class="ml-4 pageclip-form__submit"></span>
                                         </button>
                                     </div>
                                 </form>
@@ -1006,7 +1015,9 @@
     <footer>
         <div class="flex flex-col justify-between pt-5 pb-10 mx-5 sm:flex-row">
             <p class="text-sm text-black">
-                <script>document.write('&copy; Copyrights ' + (new Date().getFullYear()));</script>
+                <script>
+                    document.write('&copy; Copyrights ' + (new Date().getFullYear()));
+                </script>
                 MCAT Global.
             </p>
             <div class="flex items-center mt-4 space-x-4 sm:mt-0">
@@ -1022,6 +1033,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script>
         //open menu
         $("#open_menu").click(function () {
@@ -1033,7 +1045,11 @@
             $("#menu_dropdown").removeClass("block")
             $("#menu_dropdown").addClass("hidden");
         });
-
+        //page clip success message
+        let form = document.querySelector('.pageclip-form')
+        Pageclip.form(form, {
+            successTemplate: '<span>Thank You!. <br> We will get back to you as soon as possible</span>'
+        })
     </script>
 </body>
 
